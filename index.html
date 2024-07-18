@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta aria-roledescription="hss">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/46f8e067f1.js" crossorigin="anonymous"></script>
+<script src="main.js" defer></script>
+  <title>Play with binary and morse code</title>
+</head>
+<body>
+  <header>
+ <b class="logo">EnDecode</b>
+ <a class="pic home" href="#"><i class="fa-solid fa-house fa-2xl" style="color: black"></i></a>
+ <button class="sign-in">Sign In</button>
+ <a class="more" href="#">···</a>
+</header>
+<div class="container">
+  <h2 class="head">Binary & Morse Code Converter</h2>
+  <div class="top">
+<textarea placeholder="Enter your text"></textarea>
+<button class="clear">&times;</button>
+  </div>
+<div class="select">
+  <br>
+  <div> <input type="radio" name="selecting" class="input-shadow" id="Tobinary"> 
+  <label for="Tobinary">To Binary</label>
+  </div>
+  <div><input type="radio" name="selecting" class="input-shadow" id="Tomorse"> 
+    <label for="Tomorse">To Morse Code</label> </div>
+
+<div>  <input type="radio" name="selecting" class="input-shadow" id="frmbinary" >
+    <label for="frmbinary">From Binary</label> </div>
+
+<div>  <input type="radio" name="selecting" class="input-shadow" id="frmmorse">
+    <label for="frmmorse">From Morse Code</label> </div>
+</div>
+<br>
+  <button class="btn">Convert</button> <br>
+    <div class="result">
+  <button class="copy show" onclick="copy()"><i class="fa-solid fa-copy fa-xl" ></i></button>
+  <p class="done">Copied</p>
+      <div class="result-text">
+      </div>
+</div>
+</div>
+<br>
+<div class="footer">
+  <div class="social">
+    <p class="follow">Follow us on-</p>
+  <a class="pic" href="https://www.facebook.com/profile.php?id=100077751670566">
+   <i class="fa-brands fa-facebook fa-2xl" style="color: #0000ff;margin-bottom: 40px"></i></a>
+  <a class="pic" href="#">
+    <i class="fa-brands fa-instagram fa-2xl" style="color: #ff530f;"></i></a>
+   <a class="" href="#"><i class="fa-brands fa-x-twitter fa-2xl" style="color: black"></i></a>
+<a class="pic" href="https://www.youtube.com/@MUHAMMAD-HAMIM-ISLAM"><i class="fa-brands fa-youtube fa-2xl" style="color:red"></i></a>
+  </div>
+  <p id="copyright">Copyright &copy; 2024 by Muhammad Hamim Islam,All right reseved</p>
+</div>
+</body>
+  </html>
