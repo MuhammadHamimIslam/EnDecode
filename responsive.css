@@ -1,24 +1,25 @@
 *{
   margin: 0;
   padding: 0;
-  font-size: 40px;
   box-sizing: border-box
   }
 body{
   font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 .head{
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #FF0000E8;
   background: #FBD039DE;
 }
 .btn{
-  padding: 25px;
+  padding: 10px;
   color: #0E77FF;
   border-radius: 10px;
-  font-size: 55px;
-  border: 6px double #0EFBFF;
+  font-size: 1.3rem;
+  border: 3px double #0EFBFF;
 }
 .btn:hover{
   background: #0E77FF;
@@ -30,54 +31,54 @@ body{
   flex-direction: column;
 }
 label{
-  font-size: 63px;
+  font-size: 25px;
   color: #30D9FFE8;
 }
 .result{
   width: 100%;
-  height: auto;
+  height: 30%;
   background: #E1E1E1;
   margin-top: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   user-select: none;
-  font-size: 1.6rem;
+  font-size: 1rem;
   text-align: center;
   position: relative;
-  box-sizing: border-box
 }
 textarea{
-  border: 4px solid #000000;
-  font-size: 50px;
+  border: 2px solid #000000;
+  font-size: 20px;
   width: 97%;
-  height: 300px;
+  height: 100px;
   font-family: Arial, Helvetica, sans-serif;
   outline: none;
-  margin-top: 20px;
-  border-radius: 10px;
-  margin-left: 1.5%
+  margin-top: 10px;
+  border-radius: 5px;
+  margin-left: 1.5%;
+  padding: 5px;
 }
 textarea:focus{
-  border: 6px solid #0382FF;
+  border: 2px solid #0382FF;
 }
 .copy{
   float: right;
-  padding: 16px;
-  background: transparent;
-width: 90px;
+  padding: 10px;
+  background: #00000000;
+width: 35px;
 border: none;
+height: 35px;
 }
 .copy:hover{
  color: #22CDFF;
  transition: 0.4s 0.1s linear
 }
 .clear{
-  font-size: 2.3rem;
+  font-size: 2rem;
   background: transparent;
   border: none;
   position: absolute;
-  right: 23px;
-  top: 67%;
-  margin-right: 7px;
+  right: 3%;
+  top: 65%;
   color: #08A2FF;
 }
 .clear:hover{
@@ -86,17 +87,16 @@ border: none;
 .select{
   display: grid;
   justify-content: center;
-  
+  grid-template-rows: repeat(4,auto)
 }
 .top{
   position: relative;
 }
 .result-text{
-  word-spacing: 25px;
+  word-spacing: 3px;
   overflow-y: auto;
-  height: 300px;
+  height: 100px;
   width: 90%;
-  box-sizing: border-box;
   margin:  auto;
 }
 .footer{
@@ -112,18 +112,18 @@ border: none;
   width: 100%;
 }
 .pic{
-  width: 90px;
-  margin-left: 30px
+  width: 50px;
+  margin-left: 10px;
 }
 #copyright {
   background: #E2BEBE;
  margin-top: 15px;
- font-size: 1.2rem
+ font-size: 1rem
 }
 .follow{
   color: #FFED00;
-  padding: 16px;
-  font-size: 1.2rem
+  padding: 5px;
+  font-size: 1.1rem
 }
 header{
   background: #9F9F9F;
@@ -131,48 +131,45 @@ header{
  color: #00FFF4;
 }
 .logo{
-  margin-left: 30px;
-  font-size: 2.3rem;
-  -webkit-text-stroke: 5px #fff
-}
-.home{
-  margin-left: 45px;
-  margin-top: 23px
+  margin-left: 10px;
+  font-size: 2.4rem;
+  -webkit-text-stroke: 2px #FFFC00;
+  color: #01B9FF;
+  font-family: "Sevillana",cursive
 }
 .sign-in{
  background: transparent;
-  color: #000000;
-  border: 4px double #0FF2FF;
-  padding: 20px;
-  border-radius: 20px;
-  margin-left: 31px;
-  margin-bottom: 30px;
-  transition: 0.7s 0.2s ease-out;
+  color: #FFFF00;
+  border: 2px solid #0FF2FF;
+ padding: 5px;
+  border-radius: 9px;
+  transition: 0.4s 0.1s ease-out;
   font-size: 1rem;
-
 }
 .sign-in:hover{
   background: #0F86FF;
 }
+.Header{
+  width: 100%;
+  display: flex;
+  justify-content: space-around
+}
 .more{
   text-decoration: none;
-  font-size: 100px;
+  font-size: 30px;
   color: black;
-  float: right;
-  margin-top: 12px
+  margin-top: 5px;
+  display: inline-block;
 }
    .div-switch{
-     font-size: 17px;
-     height: 150px;
-     width: 300px;
-  float: right;
+  height: 60px;
+  width: 40%;
   background: #2D2D2D;
-margin-right: -20px;
   display: none;
-  border-radius: 10px;
+  border-radius: 5px;
   position: absolute;
-  top: 13px;
-  right: 25px;
+  top: 10px;
+  right: 6px;
   color: #fff;
   transition: all 0.4s linear;
   animation: fade-in 0.4s linear
@@ -181,46 +178,50 @@ margin-right: -20px;
     color: #fff; 
     background: #FFFFFF00;
     border: none;
-    transform: translate(255px,-55px);
     padding: 10px;
-    font-size: 55px
+    font-size: 26px;
+    margin-bottom: 39px;
+    transform: translateX(115px)
 }
 .div-switch #toggle-switch{
   display: none
 }
 .div-switch .switch{
   width: 90px;
-  height: 25px;
+  height: 15px;
   background: #CACACA;
-  border-radius: 130px;
+  border-radius: 20px;
   position: relative;
-  transition: 0.3s 0.2s all ease-in-out;
+  transition: all 0.4s linear;
   margin-right: 20px
 }
 .div-switch .switch::after{
   content: "";
-  width: 35px;
-  height: 35px;
+  width: 21px;
+  height: 21px;
   background: #FFFFFF;
   position: absolute;
   border-radius: 50%;
  transition: 0.4s all linear;
-transform: translateY(-5px);
+ transform: translateY(-3px)
 }
  #toggle-switch:checked + .switch{
   background: #82C9FF
 }
 #toggle-switch:checked + .switch::after{
-  transform: translate(55px,-5px);
   background: #2DB0FF;
+  transform: translate(30px,-3px)
 }
 .div-switch .dark{
-  font-size: 30px
+  font-size: 0.9rem;
+  width: 50%;
+  display: inline-block;
 }
 .more-content{
   display: flex;
+  transition: all 0.4s linear;
   align-items: center;
-  transition: all 0.4s linear
+  justify-content: center;
 }
 @keyframes fade-in{
   from{
@@ -235,36 +236,36 @@ transform: translateY(-5px);
   position: absolute;
   top: -17%;
  right: 0;
- border-radius: 12px;
+ border-radius: 4px;
  color: #FFFFFF;
- width: 140px;
  visibility: hidden;
- transition: 0.4s 0.1s linear
+ transition: 0.4s 0.1s linear;
+ width: 20%;
+ animation: fade-in 0.4s 0.1s linear
 }
 .show:hover ~ .done{
  visibility: visible;
- transition: 0.4s 0.1s linear
+ transition: 0.4s 0.1s linear;
   }
-  
 .radio{
-      width: 65px;
-      height: 65px;
+      width: 25px;
+      height: 25px;
       display: inline-block;
       position: relative;
       border-radius: 50%;
-      border: 4px solid #BBBBBB;
+      border: 1px solid #BBBBBB;
     transition: all 0.4s linear;
-    margin-top: 20px;
+    margin-top: 5px
     }
     .radio::after{
       content: "";
-      width: 30px;
-      height: 30px;
+      width: 11px;
+      height: 11px;
       border-radius: 50%;
       display: inline-block;
       position: absolute;
-      top: 13px;
-      right: 14px;
+      top: 6px;
+      right: 6px;
       background: #DDDDDD;
       transition: all 0.4s linear
     }
@@ -276,8 +277,12 @@ transform: translateY(-5px);
     }
     .Radio:checked + .radio{
       background: #077AFF;
-      border: 4px solid #077AFF
+      border: 1px solid #077AFF
     }
 .Radio:checked ~ .radio{
-  box-shadow: 6px 6px 4px #79D0FF,6px -6px 4px #79D0FF,-6px -6px 4px #79D0FF, -6px 6px 4px #79D0FF;
+  box-shadow: 3px 3px 2px #79D0FF,3px -3px 2px #79D0FF,-3px -3px 2px #79D0FF, -3px 3px 2px #79D0FF;
+}
+.logo::selection{
+  color: #FFF901;
+  -webkit-text-stroke: 2px #01B9FF
 }

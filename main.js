@@ -33,7 +33,7 @@ function binaryToText(binary) {
 document.querySelector('.btn').addEventListener('click', () => {
   const textArea = document.querySelector('textarea');
   const resultSpan = document.querySelector('.result-text');
-  resultSpan.style.color = 'blue'
+  resultSpan.style.color = '#006AFF'
   const inputText = textArea.value.trim(); // Trim whitespace from input
   let result = '';
 
@@ -59,3 +59,12 @@ function copy() {
   const result = document.querySelector('.result-text').textContent; // Copy from the result text span
   navigator.clipboard.writeText(result);
 }
+const more = document.querySelector('.more')
+const moreContent= document.querySelector('.div-switch');
+const Cross = document.querySelector('.cross');
+more.addEventListener('click', () => {
+  moreContent.classList.add('more-content')
+})
+Cross.addEventListener('click',() => {
+  moreContent.classList.remove('more-content')
+})
