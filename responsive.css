@@ -286,3 +286,6 @@ header{
   color: #FFF901;
   -webkit-text-stroke: 2px #01B9FF
 }
+.home,.pic{
+  margin-top: 15px
+}
