@@ -5,35 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/46f8e067f1.js" crossorigin="anonymous"></script>
-<script src="main.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
   <title>Play with binary and morse code</title>
 </head>
 <body>
   <header>
+    <div class="Header">
  <b class="logo">EnDecode</b>
  <a class="pic home" href="#"><i class="fa-solid fa-house fa-2xl" style="color: black"></i></a>
  <button class="sign-in">Sign In</button>
- <a class="more" href="#">···</a>
+ <p class="more">···</p> </div>
+  <div class="div-switch">
+    <button class="cross">&times;</button>
+    <label for="toggle-switch" class="dark">Dark Mode:</label>
+      <input type="checkbox" id="toggle-switch">
+      <label for="toggle-switch" class="switch"></label>
+  </div>
 </header>
+
 <div class="container">
   <h2 class="head">Binary & Morse Code Converter</h2>
   <div class="top">
 <textarea placeholder="Enter your text"></textarea>
 <button class="clear">&times;</button>
   </div>
+  
 <div class="select">
   <br>
-  <div> <input type="radio" name="selecting" class="input-shadow" id="Tobinary"> 
+  <div> <input type="radio" name="selecting" class="input-shadow Radio" id="Tobinary"> 
+  <label for="T" class="radio"></label>
   <label for="Tobinary">To Binary</label>
   </div>
-  <div><input type="radio" name="selecting" class="input-shadow" id="Tomorse"> 
+  <div><input type="radio" name="selecting" class="input-shadow Radio" id="Tomorse"> 
+  <label for="Tomorse" class="radio"></label>
     <label for="Tomorse">To Morse Code</label> </div>
 
-<div>  <input type="radio" name="selecting" class="input-shadow" id="frmbinary" >
+<div>  <input type="radio" name="selecting" class="input-shadow Radio" id="frmbinary" >
+<label for="frmbinary" class="radio"></label>
     <label for="frmbinary">From Binary</label> </div>
 
-<div>  <input type="radio" name="selecting" class="input-shadow" id="frmmorse">
+<div>  <input type="radio" name="selecting" class="input-shadow Radio" id="frmmorse">
+<label for="frmmorse" class="radio"></label>
     <label for="frmmorse">From Morse Code</label> </div>
 </div>
 <br>
@@ -53,10 +67,16 @@
    <i class="fa-brands fa-facebook fa-2xl" style="color: #0000ff;margin-bottom: 40px"></i></a>
   <a class="pic" href="#">
     <i class="fa-brands fa-instagram fa-2xl" style="color: #ff530f;"></i></a>
-   <a class="" href="#"><i class="fa-brands fa-x-twitter fa-2xl" style="color: black"></i></a>
+   <a class="pic" href="#">
+     <i class="fa-brands fa-x-twitter fa-2xl" style="color: black"></i></a>
+<a href="mailto:muhammadhamimislam47@gmail.com?subject=Review%20of%20the%20website%20EnDecode&body=I've%20used%20your%20your%20website%20Endecode.I'm%20here%20to%give%20a%20review"> 
+<i class="fa-solid fa-envelope fa-2xl" style="color: red"></i></a>
+<a class="pic" href="https://github.com/MuhammadHamimIslam"><i class="fa-brands fa-github fa-2xl" style="color: #000000"></i></a>
 <a class="pic" href="https://www.youtube.com/@MUHAMMAD-HAMIM-ISLAM"><i class="fa-brands fa-youtube fa-2xl" style="color:red"></i></a>
   </div>
   <p id="copyright">Copyright &copy; 2024 by Muhammad Hamim Islam,All right reseved</p>
 </div>
+<script src="https://kit.fontawesome.com/2d6cc19705.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </body>
   </html>
