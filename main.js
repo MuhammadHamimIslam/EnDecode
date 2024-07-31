@@ -46,7 +46,7 @@ document.querySelector('.btn').addEventListener('click', () => {
   } else if (document.getElementById('frmmorse').checked) {
     result = morseToText(inputText);
   }
-  resultSpan.innerHTML = result || "<p style='color:red'>Result not found. Please enter a valid text.</p>";
+  resultSpan.innerHTML = result || `<p style='color:red'><i class="fa-solid fa-triangle-exclamation"></i>Result not found. Please enter a valid text.</p>`;
  
 });
 
@@ -68,3 +68,13 @@ more.addEventListener('click', () => {
 Cross.addEventListener('click',() => {
   moreContent.classList.remove('more-content')
 })
+// for toggling theme to dark and light 
+const toggleSwitch = document.getElementById('toggle-switch');
+
+toggleSwitch.addEventListener('change', function() {
+  if (this.checked) {
+    document.body.classList.add('dark-mode');
+  } else {
+    document.body.classList.remove('dark-mode');
+  }
+});
