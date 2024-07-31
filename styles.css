@@ -1,3 +1,9 @@
+:root{
+  --light-text: #2D2D2D ;
+  --light-bg: #FAFAFA;
+  --dark-text: #FAFAFA;
+  --dark-bg: #2D2D2D
+}
 *{
   margin: 0;
   padding: 0;
@@ -7,6 +13,8 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   width: 100vw;
   height: 100vh;
+  user-select: none;
+  background: var(--light-bg);
 }
 .head{
   text-align: center;
@@ -24,7 +32,7 @@ body{
 .btn:hover{
   background: #0E77FF;
     transition: 0.4s 0.9ms ease-in;
-    color: #fff
+    color: var(--dark-text)
 }
 .container{
   display: flex;
@@ -58,7 +66,7 @@ textarea{
   padding: 5px;
 }
 textarea:focus{
-  border: 2px solid #0382FF;
+  border-color: #0382FF;
 }
 .copy{
   float: right;
@@ -87,7 +95,7 @@ height: 35px;
 .select{
   display: grid;
   justify-content: center;
-  grid-template-rows: repeat(4,auto)
+  grid-template-rows: repeat(4,1fr)
 }
 .top{
   position: relative;
@@ -95,9 +103,9 @@ height: 35px;
 .result-text{
   word-spacing: 3px;
   overflow-y: auto;
-  height: 100px;
   width: 90%;
   margin:  auto;
+  aspect-ratio: 16/6
 }
 .footer{
   position: relative;
@@ -126,7 +134,7 @@ height: 35px;
   font-size: 1.1rem
 }
 header{
-  background: #9F9F9F;
+  background: linear-gradient(50deg,#00A5FF,#0065FF,#FFB700,#F5FF00);
   width: 100%;
  color: #00FFF4;
 }
@@ -138,8 +146,8 @@ header{
   font-family: "Sevillana",cursive
 }
 .sign-in{
- background: transparent;
-  color: #FFFF00;
+ background: #FFBE27;
+  color: var(--light-text);
   border: 2px solid #0FF2FF;
  padding: 5px;
   border-radius: 9px;
@@ -152,7 +160,7 @@ header{
 .Header{
   width: 100%;
   display: flex;
-  justify-content: space-around
+  justify-content: space-between
 }
 .more{
   text-decoration: none;
@@ -164,58 +172,58 @@ header{
    .div-switch{
   height: 60px;
   width: 40%;
-  background: #2D2D2D;
+  background: var(--light-bg);
   display: none;
   border-radius: 5px;
   position: absolute;
   top: 10px;
   right: 6px;
-  color: #fff;
   transition: all 0.4s linear;
   animation: fade-in 0.4s linear
    }
 .cross{
-    color: #fff; 
+    color: var(--light-text); 
     background: #FFFFFF00;
     border: none;
     padding: 10px;
-    font-size: 26px;
-    margin-bottom: 39px;
-    transform: translateX(115px)
+    font-size: 1.8rem;
+    position: relative;
+    top: -20px;
+    left: 80%;
 }
 .div-switch #toggle-switch{
   display: none
 }
 .div-switch .switch{
-  width: 90px;
+  width: 55%;
   height: 15px;
   background: #CACACA;
-  border-radius: 20px;
-  position: relative;
+ border-radius: 20px;
   transition: all 0.4s linear;
-  margin-right: 20px
 }
 .div-switch .switch::after{
   content: "";
-  width: 21px;
-  height: 21px;
+  width: 15%;
+  height: 36%;
   background: #FFFFFF;
   position: absolute;
   border-radius: 50%;
  transition: 0.4s all linear;
- transform: translateY(-3px)
+ transform: translateY(-4px);
+ border: 1px solid;
 }
  #toggle-switch:checked + .switch{
   background: #82C9FF
 }
 #toggle-switch:checked + .switch::after{
   background: #2DB0FF;
-  transform: translate(30px,-3px)
+  transform: translate(140%,-4px)
 }
 .div-switch .dark{
   font-size: 0.9rem;
   width: 50%;
   display: inline-block;
+  color: #2D2D2D;
 }
 .more-content{
   display: flex;
@@ -232,12 +240,12 @@ header{
   }
 }
 .done{
-  background: #5C5656;
+  background: var(--dark-bg);
   position: absolute;
   top: -17%;
  right: 0;
  border-radius: 4px;
- color: #FFFFFF;
+ color: var(--dark-text);
  visibility: hidden;
  transition: 0.4s 0.1s linear;
  width: 20%;
@@ -282,10 +290,38 @@ header{
 .Radio:checked ~ .radio{
   box-shadow: 3px 3px 2px #79D0FF,3px -3px 2px #79D0FF,-3px -3px 2px #79D0FF, -3px 3px 2px #79D0FF;
 }
-.logo::selection{
-  color: #FFF901;
-  -webkit-text-stroke: 2px #01B9FF
-}
-.home,.pic{
+.home, .pic{
   margin-top: 15px
-  }
+}
+.dark-mode{
+  background: var(--dark-bg) ;
+  color: var(--dark-text);
+}
+.dark-mode .dark{
+  color: var(--dark-text);
+}
+.dark-mode .div-switch{
+  background: var(--dark-bg)
+}
+.dark-mode .cross{
+  color: var(--dark-text);
+}
+.dark-mode .btn{
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+.dark-mode .btn:hover{
+  color: var(--light-text);
+  background: #0E77FF;
+  transition: 0.4s 0.9ms ease-in;
+}
+.dark-mode textarea{
+  border-color: #91927C
+}
+.dark-mode textarea:focus{
+  border-color: #0382FF
+}
+.dark-mode .done{
+  background: var(--light-bg);
+  color: var(--light-text);
+}
