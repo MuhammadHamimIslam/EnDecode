@@ -1,8 +1,10 @@
 :root{
-  --light-text: #2D2D2D ;
-  --light-bg: #FAFAFA;
-  --dark-text: #FAFAFA;
-  --dark-bg: #2D2D2D
+  --text-color: #3B3B3B ;
+  --body-bg-color: #FAFAFA;
+  --btn-hover-bg-color: #0E77FF;
+  --result-bg-color:#CBCBCB;
+  --textarea-bg: #E8E8E8;
+  --textarea-text: #494949;
 }
 *{
   margin: 0;
@@ -11,10 +13,11 @@
   }
 body{
   font-family: Arial, Helvetica, sans-serif;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   user-select: none;
-  background: var(--light-bg);
+  background: var(--body-bg-color);
+  color: var(--text-color)
 }
 .head{
   text-align: center;
@@ -24,15 +27,17 @@ body{
 }
 .btn{
   padding: 10px;
-  color: #0E77FF;
+  color: var(--btn-hover-bg-color);
   border-radius: 10px;
   font-size: 1.3rem;
   border: 3px double #0EFBFF;
+  transition: 0.4s 0.9ms ease-in;
+  background-color: var(--body-bg-color)
 }
 .btn:hover{
-  background: #0E77FF;
+  background: var(--btn-hover-bg-color);
     transition: 0.4s 0.9ms ease-in;
-    color: var(--dark-text)
+    color: var(--body-bg-color)
 }
 .container{
   display: flex;
@@ -45,7 +50,7 @@ label{
 .result{
   width: 100%;
   height: 30%;
-  background: #E1E1E1;
+  background: var(--result-bg-color);
   margin-top: 20px;
   border-radius: 10px;
   user-select: none;
@@ -64,9 +69,12 @@ textarea{
   border-radius: 5px;
   margin-left: 1.5%;
   padding: 5px;
+  background: var(--textarea-bg);
+  color: var(--textarea-text);
 }
 textarea:focus{
   border-color: #0382FF;
+  box-shadow: 0 0 0.5rem #0382FF;
 }
 .copy{
   float: right;
@@ -75,10 +83,11 @@ textarea:focus{
 width: 35px;
 border: none;
 height: 35px;
+ stroke: none
 }
 .copy:hover{
- color: #22CDFF;
- transition: 0.4s 0.1s linear
+ transition: 0.4s 0.1s linear;
+ fill: #0083FF;
 }
 .clear{
   font-size: 2rem;
@@ -121,7 +130,7 @@ height: 35px;
 }
 .pic{
   width: 50px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 #copyright {
   background: #E2BEBE;
@@ -147,7 +156,7 @@ header{
 }
 .sign-in{
  background: #FFBE27;
-  color: var(--light-text);
+  color: var(--text-color);
   border: 2px solid #0FF2FF;
  padding: 5px;
   border-radius: 9px;
@@ -172,19 +181,18 @@ header{
    .div-switch{
   height: 60px;
   width: 40%;
-  background: var(--light-bg);
+  background: var(--body-bg-color);
   display: none;
   border-radius: 5px;
   position: absolute;
   top: 10px;
   right: 6px;
   transition: all 0.4s linear;
-  animation: fade-in 0.4s linear
+  animation: fade-in 0.4s linear;
+  color: var(--text-color);
    }
 .cross{
-    color: var(--light-text); 
-    background: #FFFFFF00;
-    border: none;
+    color: var(--text-color); 
     padding: 10px;
     font-size: 1.8rem;
     position: relative;
@@ -223,7 +231,6 @@ header{
   font-size: 0.9rem;
   width: 50%;
   display: inline-block;
-  color: #2D2D2D;
 }
 .more-content{
   display: flex;
@@ -240,12 +247,12 @@ header{
   }
 }
 .done{
-  background: var(--dark-bg);
+  background: var(--text-color);
   position: absolute;
   top: -17%;
  right: 0;
  border-radius: 4px;
- color: var(--dark-text);
+ color: var(--body-bg-color);
  visibility: hidden;
  transition: 0.4s 0.1s linear;
  width: 20%;
@@ -294,34 +301,16 @@ header{
   margin-top: 15px
 }
 .dark-mode{
-  background: var(--dark-bg) ;
-  color: var(--dark-text);
-}
-.dark-mode .dark{
-  color: var(--dark-text);
-}
-.dark-mode .div-switch{
-  background: var(--dark-bg)
-}
-.dark-mode .cross{
-  color: var(--dark-text);
-}
-.dark-mode .btn{
-  background: var(--dark-bg);
-  color: var(--dark-text);
-}
-.dark-mode .btn:hover{
-  color: var(--light-text);
-  background: #0E77FF;
-  transition: 0.4s 0.9ms ease-in;
+    --text-color: #FAFAFA;
+  --body-bg-color: #303030;
+  --btn-hover-bg-color: #0E77FF;
+  --result-bg-color: #8F8686;
+  --textarea-bg: #5F5F5F;
+  --textarea-text: #DCDCDC
 }
 .dark-mode textarea{
-  border-color: #91927C
+  box-shadow: 0 0 0.7rem #FFFFFF;
 }
-.dark-mode textarea:focus{
-  border-color: #0382FF
-}
-.dark-mode .done{
-  background: var(--light-bg);
-  color: var(--light-text);
+.dark-mode textarea::placeholder{
+  color: var(--text-color);
 }
