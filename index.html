@@ -4,7 +4,7 @@
   <meta aria-roledescription="hss">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
@@ -15,11 +15,17 @@
   <header>
     <div class="Header">
  <b class="logo">EnDecode</b>
- <a class="pic home" href="#"><i class="fa-solid fa-house fa-2xl" style="color: black"></i></a>
+ <a class="pic home" href="#">
+<svg style="transform: scale(2.6)" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<g fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+		<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+		<path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+	</g>
+</svg> </a>
  <button class="sign-in">Sign In</button>
  <p class="more">···</p> </div>
   <div class="div-switch">
-    <button class="cross">&times;</button>
+    <b class="cross">&times;</b>
     <label for="toggle-switch" class="dark">Dark Mode:</label>
       <input type="checkbox" id="toggle-switch">
       <label for="toggle-switch" class="switch"></label>
@@ -54,7 +60,10 @@
 <br>
   <button class="btn">Convert</button> <br>
     <div class="result">
-  <button class="copy show" onclick="copy()"><i class="fa-solid fa-copy fa-xl" ></i></button>
+  <button class="copy show">
+    <svg style="transform: scale(2.2)" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M5.503 4.627L5.5 6.75v10.504a3.25 3.25 0 0 0 3.25 3.25h8.616a2.25 2.25 0 0 1-2.122 1.5H8.75A4.75 4.75 0 0 1 4 17.254V6.75c0-.98.627-1.815 1.503-2.123M17.75 2A2.25 2.25 0 0 1 20 4.25v13a2.25 2.25 0 0 1-2.25 2.25h-9a2.25 2.25 0 0 1-2.25-2.25v-13A2.25 2.25 0 0 1 8.75 2zm0 1.5h-9a.75.75 0 0 0-.75.75v13c0 .414.336.75.75.75h9a.75.75 0 0 0 .75-.75v-13a.75.75 0 0 0-.75-.75" />
+</svg></button>
   <p class="done">Copied</p>
       <div class="result-text">
       </div>
@@ -65,18 +74,42 @@
   <div class="social">
     <p class="follow">Follow us on-</p>
   <a class="pic" href="https://www.facebook.com/profile.php?id=100077751670566" target="blank">
-   <i class="fa-brands fa-facebook fa-2xl" style="color: #0000ff;margin-bottom: 40px"></i></a>
-   <a class="pic" href="https://x.com/hamim27034?t=XoJ7LxBmSmnTVYG-WOj8sg&s=09" target="blank">
-     <i class="fa-brands fa-x-twitter fa-2xl" style="color: black"></i></a>
-<a href="mailto:muhammadhamimislam47@gmail.com?subject=Review%20of%20the%20website%20EnDecode&body=I've%20used%20your%20your%20website%20Endecode.I'm%20here%20to%give%20a%20review" target="blank"> 
-<i class="fa-regular fa-envelope fa-2xl" style="color: red"></i></a>
-<a class="pic" href="https://github.com/MuhammadHamimIslam" target="blank"><i class="fa-brands fa-github fa-2xl" style="color: #000000"></i></a>
+<svg style="transform: scale(3)" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path fill="#0073ff" d="M20 12.05a8 8 0 1 0-9.25 8v-5.67h-2v-2.33h2v-1.77a2.83 2.83 0 0 1 3-3.14a12 12 0 0 1 1.79.16v2h-1a1.16 1.16 0 0 0-1.3 1.26v1.51h2.22l-.36 2.33h-1.85V20A8 8 0 0 0 20 12.05" />
+</svg></a>
+<a href="https://x.com/hamim27034?t=XoJ7LxBmSmnTVYG-WOj8sg&s=09" class="pic"><svg style="transform: scale(2)" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 14 14">
+	<g fill="none">
+		<g>
+			<path fill="black" d="M11.025.656h2.147L8.482 6.03L14 13.344H9.68L6.294 8.909l-3.87 4.435H.275l5.016-5.75L0 .657h4.43L7.486 4.71zm-.755 11.4h1.19L3.78 1.877H2.504z"/></g>
+		<defs>
+			<clipPath id="primeTwitter0">
+				<path fill="#fff" d="M0 0h14v14H0z" />
+			</clipPath>
+		</defs>
+	</g>
+</svg></a>
+<a class="pic" href="mailto: odvutnam47@gmail.com?subject=Review%20of%20the%20website%20EnDecode.&body=I've%20used%20your%20your%20website%20Endecode.I'm%20here%20to%20give%20a%20review" target="blank"> 
+<svg style="transform: scale(2.8)" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	  <path fill="black" d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 5l-8-5zm0 12H4V8l8 5l8-5z" />
+	</svg></a>
+	<a href="https://codepen.io/muhammad_hamim_Islam" class="pic">
+<svg style="scale: 2.4" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path fill="black" d="M16.5 13.202L13 15.535v3.596L19.197 15zM14.697 12L12 10.202L9.303 12L12 13.798zM20 10.868L18.303 12L20 13.132zM19.197 9L13 4.869v3.596l3.5 2.333zM7.5 10.798L11 8.465V4.869L4.803 9zM4.803 15L11 19.131v-3.596l-3.5-2.333zM4 13.132L5.697 12L4 10.868zM2 9a1 1 0 0 1 .445-.832l9-6a1 1 0 0 1 1.11 0l9 6A1 1 0 0 1 22 9v6a1 1 0 0 1-.445.832l-9 6a1 1 0 0 1-1.11 0l-9-6A1 1 0 0 1 2 15z" />
+</svg>
+	</a>
+	<a class="pic" href="https://github.com/MuhammadHamimIslam" target="blank">
+<svg style="transform: scale(3)" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" >
+  <path fill="black" d="M9.35 16.88c0 .07-.07.12-.17.12S9 17 9 16.88s.08-.12.17-.12s.18.05.18.12m-1-.15c0 .07 0 .15.14.17a.15.15 0 0 0 .2-.07c0-.07 0-.14-.14-.17s-.18 0-.2.07m1.42-.05c-.09 0-.15.08-.14.16s.09.11.19.09s.15-.09.14-.16s-.09-.1-.19-.09M11.9 4A7.83 7.83 0 0 0 4 12.07A8.29 8.29 0 0 0 9.47 20c.41.07.56-.19.56-.4v-2s-2.26.5-2.74-1c0 0-.36-1-.89-1.21c0 0-.74-.52.05-.51a1.67 1.67 0 0 1 1.24.85a1.69 1.69 0 0 0 2.36.69a1.83 1.83 0 0 1 .51-1.11c-1.8-.21-3.62-.47-3.62-3.66A2.54 2.54 0 0 1 7.7 9.7a3.2 3.2 0 0 1 .08-2.24c.68-.22 2.23.89 2.23.89a7.46 7.46 0 0 1 4.05 0s1.55-1.11 2.23-.89a3.14 3.14 0 0 1 .08 2.24a2.6 2.6 0 0 1 .83 1.95c0 3.2-1.9 3.45-3.7 3.66a2 2 0 0 1 .5 1.5v2.77a.42.42 0 0 0 .56.4A8.22 8.22 0 0 0 20 12.07A8 8 0 0 0 11.9 4M7.14 15.41v.17a.12.12 0 0 0 .17 0s0-.11 0-.18s-.13-.03-.17.01m-.35-.27s0 .1.07.13a.09.09 0 0 0 .14 0s0-.1-.07-.13s-.12-.03-.14 0m1 1.18v.21c0 .07.17.08.21 0s0-.14 0-.21s-.13-.05-.17 0Zm-.37-.49v.2c0 .08.14.11.19.08a.16.16 0 0 0 0-.21c-.05-.08-.13-.11-.19-.07" />
+</svg></a>
 <a class="pic" href="https://www.youtube.com/@MUHAMMAD-HAMIM-ISLAM">
-  <i class="fa-brands fa-youtube fa-2xl" style="color:red"></i></a>
+<svg style="transform: scale(3)" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path fill="#f50000" d="M19.67 8.14a2 2 0 0 0-1.42-1.43A48 48 0 0 0 12 6.38a48 48 0 0 0-6.25.33a2 2 0 0 0-1.42 1.43A21.3 21.3 0 0 0 4 12a21.4 21.4 0 0 0 .33 3.88a2 2 0 0 0 1.42 1.4a48 48 0 0 0 6.25.33a48 48 0 0 0 6.25-.33a2 2 0 0 0 1.42-1.4A21.4 21.4 0 0 0 20 12a21.3 21.3 0 0 0-.33-3.86m-9.31 6.25V9.63L14.55 12l-4.19 2.38Z" />
+</svg>
+</a>
   </div>
   <p id="copyright">Copyright &copy; 2024 by Muhammad Hamim Islam,All right reseved</p>
 </div>
-<script src="https://kit.fontawesome.com/2d6cc19705.js" crossorigin="anonymous"></script>
+<!--<script src="https://kit.fontawesome.com/2d6cc19705.js" crossorigin="anonymous"></script>-->
 <script src="main.js"></script>
 </body>
   </html>
